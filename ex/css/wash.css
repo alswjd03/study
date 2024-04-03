@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+/*  빨래방 pc */
+
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang&display=swap')
+/* gowun 구글폰트 */
+* {
+  outline: 1px solid darkblue;
+}
+
+
+/*html*/
+: root {
+  font-family: "Gowun Batang", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1 {
+  text-align: center;
+}
+/*바디를 기준으로 레이아웃 가운데정렬*/
+
+/*body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}*/
+
+.ineer {
+  width: 860px;
+  height: 556px;
+  flex-shrink: 0;
+
+}
