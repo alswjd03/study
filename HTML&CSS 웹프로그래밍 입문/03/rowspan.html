@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title>행 합치기 rowspan</title>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="/03/css/rowspan.css">
+</head>
+
+<body>
+    <!-- 엑셀처럼 생각하자, 행을 합치려고 하는 대상의 첫번째에
+    rowspan 속성을 선언하고 몇개를 합칠 것인지 숫자를 적는다
+    대상이 먹어치웠으니, 먹은건 삭제💥  -->
+    <table>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td rowspan="2">3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td colspan="2">마지막 셀</td>
+        </tr>
+    </table>
+
+    <!-- 셀 합치기 응용 1 :) -->
+    <table class="ex01">
+        <tr>
+            <th></th>
+            <th>제목1</th>
+            <th>제목2</th>
+            <th>제목3</th>
+            <th>제목4</th>
+        </tr>
+        <tr>
+            <th>항목1</th>
+            <td>1</td>
+            <td colspan="2" rowspan="2">2</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <th>항목2</th>
+            <td>5</td>
+            <td rowspan="2">8</td>
+        </tr>
+        <tr>
+            <th>항목3</th>
+            <td colspan="2">9</td>
+            <td>11</td>
+        </tr>
+    </table>
+
+    <!-- 셀 합치기 응용 2 :) -->
+    <table class="ex02">
+        <!-- <tr class="bg_y"> -->
+        <tr>
+            <th>그룹1</th>
+            <th>그룹2</th>
+            <th>그룹3</th>
+            <th>그룹4</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td colspan="3">2</td>
+        </tr>
+        <tr>
+            <td colspan="2">5</td>
+            <td>7</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td rowspan="3">9</td>
+            <td>10</td>
+            <td colspan="2" rowspan="2">11</td>
+        </tr>
+        <tr>
+            <td>14</td>
+        </tr>
+        <tr>
+            <td>18</td>
+            <td colspan="2">19</td>
+        </tr>
+    </table>
+</body>
+
+</html>
